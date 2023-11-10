@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Your Responsive Navbar</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+</head>
+<body class="font-sans bg-gray-200">
+    <header class="bg-blue-700 text-white py-4 text-center">
+        <h1 class="text-2xl">Jadwal Kuliah</h1>
+    </header>
+
+    <nav class="bg-gray-700 flex flex-wrap items-center justify-center">
+        <a href="#home" class="text-white px-4 py-2 block text-center">Home</a>
+        <a href="#about" class="text-white px-4 py-2 block text-center">About</a>
+        <a href="#services" class="text-white px-4 py-2 block text-center">Services</a>
+        <a href="#contact" class="text-white px-4 py-2 block text-center">Contact</a>
+    </nav>
+
+    <main class="text-center py-8">
+        <h2 class="text-2xl">Jadwal Kuliah dari Senin Sampai Jumat</h2>
+        <div class="grid grid-cols-5 gap-4 mt-4">
+            <img src="Assets/kamis.png" alt="senin" class="w-48 h-72 object-cover transition-transform duration-600 transform hover:scale-110">
+            <img src="Assets/rabu.png" alt="selasa" class="w-48 h-72 object-cover transition-transform duration-600 transform hover:scale-110">
+            <img src="Assets/selasa.png" alt="rabu" class="w-48 h-72 object-cover transition-transform duration-600 transform hover:scale-110">
+            <img src="Assets/senin.png" alt="kamis" class="w-48 h-72 object-cover transition-transform duration-600 transform hover:scale-110">
+            <img src="Assets/jumat.png" alt="jumat" class="w-48 h-72 object-cover transition-transform duration-600 transform hover:scale-110">
+        </div>
+        <br>
+        <div>
+            
+         <button onclick="changeHeadingText()" class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"> Klik Saya </button>
+         <button onclick="changeImage()" class="bg-green-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"> Klik Jam </button>
+        </div>
+        <br>
+        <div>
+            <img src="Gambar1.png" id="img">
+        </div>
+        <div>
+            <p id="heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi doloribus maiores perferendis commodi et vitae sequi voluptatum delectus nemo. Corrupti sapiente facere sequi. Reiciendis delectus non ipsa molestiae, expedita eligendi harum nihil. Assumenda, doloribus?</p>
+        </div>
+    </main>
+
+    <footer class="bg-blue-700 text-white text-center py-4">
+        <p>&copy; 2023 Your Website. All rights reserved.</p>
+    </footer>
+</body>
+</html>
